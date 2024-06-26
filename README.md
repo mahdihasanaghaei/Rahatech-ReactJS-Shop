@@ -4,7 +4,7 @@
 - Visit Project's Demo With VPN 
 - Developed by Mahdi Hasanaghaei
 - Created : 26/06/2024
-- Technologies Used : HTML5 - TailwindCSS - React.JS - ReactQuery - Axios - API - MUI
+- Technologies Used : HTML5 - TailwindCSS - React.JS - ReactQuery - Axios - API - Context API - MUI
 - Role : Front-End
 - How to reach me : with my 
 [instagram](https://www.instagram.com/mahdihasanaghaei.web/) and 
