@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'IRANSans';
+        font-style: normal;
+        src: url('/amlak-ava/src/assets/Font/Iranian\ Sans.ttf') format('ttf');
+    }
+}
+
+
+@layer base {
+    html {
+        direction: rtl; 
+        font-family: "IRANSans", system-ui, sans-serif !important;
+        scroll-behavior: smooth;
+    }
+}
+
+.MuiSnackbarContent-message {
+    font-family: "IRANSans", system-ui, sans-serif !important;
+}
+
+.MuiButtonBase-root {
+    font-family: "IRANSans", system-ui, sans-serif !important;
+}
+
+.MuiTypography-root {
+    font-family: "IRANSans", system-ui, sans-serif !important;
+    direction: rtl;
+}
