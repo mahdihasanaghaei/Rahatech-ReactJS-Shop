@@ -29,12 +29,9 @@ const Shop = () => {
                     محصولات
                 </h1>
             </div>
-            <div className='flex p-5'>
-                <div className='text-lg'>
-                    نحوه نمایش :
-                </div>
-                <div dir='ltr'>
-                    <ButtonGroup variant="outlined" aria-label="Basic button group" className='mx-5'>
+            <div className='p-5'>
+                <div dir='ltr' className='flex justify-end items-center'>
+                    <ButtonGroup variant="outlined" aria-label="Basic button group">
                         <Button onClick={showAvailableProducts}>محصولات موجود</Button>
                         <Button onClick={showAllProducts}>همه محصولات</Button>
                     </ButtonGroup>

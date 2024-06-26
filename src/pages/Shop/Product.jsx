@@ -120,21 +120,21 @@ const Product = (props) => {
         <h2 className='font-bold text-md lg:text-lg xl:text-xl flex justify-center items-center my-5 p-3'>
           {title_fa}
         </h2>
-        <div className='grid grid-cols-2 p-3'>
-          <span className='flex w-full'>
+        <div className='grid grid-cols-1 xl:grid-cols-2 p-3 *:my-2'>
+          <span className='flex justify-center items-center text-sm lg:text-md'>
             تعداد موجود در انبار : {convertToPersian(warehouse_stock)}
           </span>
-          <span className="flex justify-center items-center">
+          <span className="flex justify-center items-center text-sm lg:text-md">
             قیمت محصول : {convertToPersian(selling_price)}&nbsp;ریال
           </span>
         </div>
         <div className={cartItemAmount > 0 ? `2xl:grid-cols-3 grid grid-cols-1 gap-2` : `2xl:grid-cols-2 grid grid-cols-1 gap-2`}>
-          <div className='flex justify-center items-center my-5'>
+          <div className='flex justify-center items-center my-2'>
             <button onClick={() => { handleOpen(); refetch(); }} className='px-8 py-1 text-md font-bold rounded-2xl border border-black hover:bg-black hover:text-white transition-all duration-300'>
               مشاهده اطلاعات بیشتر
             </button>
           </div>
-          <div className='flex justify-center items-center my-5'>
+          <div className='flex justify-center items-center my-2'>
             <button
               onClick={handleAddToCart}
               className='px-8 py-1 text-md font-bold rounded-2xl border border-black hover:bg-black hover:text-white transition-all duration-300'>

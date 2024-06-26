@@ -79,10 +79,10 @@ const Cart = () => {
               </div>
             ) : (
               <div className='flex justify-center items-center flex-col bg-white border border-slate-200 rounded-2xl *:my-5'>
-                <div className='text-slate-500 text-9xl'>
+                <div className='text-slate-500 text-7xl md:text-8xl lg:text-9xl'>
                   <FaShoppingBasket />
                 </div>
-                <div className='font-bold text-3xl'>
+                <div className='font-bold text-xl md:text-2xl lg:text-3xl'>
                   سبد خرید شما خالی است
                 </div>
               </div>
