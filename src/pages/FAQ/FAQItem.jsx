@@ -15,7 +15,7 @@ const FAQItem = (props) => {
     return (
         <div className='my-8 p-4 border-b border-b-slate-300'>
             <div className='flex justify-between items-center cursor-pointer' onClick={toggleOpen}>
-                <span className='font-bold text-xl'>{question}</span>
+                <span className='font-bold text-md lg:text-lg'>{question}</span>
                 <span>
                     {isOpen ? <FaChevronUp /> : <FaChevronDown />}
                 </span>

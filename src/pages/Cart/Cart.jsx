@@ -46,7 +46,7 @@ const Cart = () => {
         </button>
       </div>
       <div className={cartAmount > 0 ? `flex flex-wrap justify-between p-5` : `flex flex-wrap justify-center p-5`}>
-        <div className='w-full xl:w-2/3'>
+        <div className='w-full lg:w-2/3'>
           {data?.map((product) => {
             if (cartItems[product.id] !== 0) {
               return <CartItem data={product} key={product.id} />
@@ -54,7 +54,7 @@ const Cart = () => {
             return null;
           })}
         </div>
-        <div className={cartAmount > 0 ? `w-full xl:w-1/4 flex my-10` : `w-4/5 flex`}>
+        <div className={cartAmount > 0 ? `w-full lg:w-1/4 flex my-10` : `w-4/5 flex`}>
           <div className='w-full max-h-56 sticky top-0 left-0 bg-[#525252] rounded-2xl'>
             {cartAmount > 0 ? (
               <div className='w-full'>

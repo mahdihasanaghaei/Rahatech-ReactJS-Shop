@@ -20,18 +20,18 @@ const CartItem = (props) => {
                     <img src={main} alt="product-image" />
                 </figure>
                 <div className='*:w-full flex flex-wrap justify-center'>
-                    <h2 className="flex justify-start items-center font-bold text-xl p-5">
+                    <h2 className="flex justify-start items-center font-bold text-lg lg:text-xl p-5">
                         {title_fa}
                     </h2>
                     <span className='flex justify-start items-center text-lg  p-5'>
                         {convertToPersian(selling_price)}&nbsp;ریال
                     </span>
-                    <div className="flex justify-start items-center p-5">
-                        <button onClick={() => removeFromCart(id)} className='px-4 py-1 font-bold text-xl rounded-md bg-[#e6e6e6]'> - </button>
+                    <div className="flex justify-start items-center p-1 xl:p-5">
+                        <button onClick={() => removeFromCart(id)} className='px-4 py-1 font-bold text-lg xl:text-xl rounded-md bg-[#e6e6e6]'> - </button>
                         <input className='py-1 flex text-center w-[100px] text-xl' value={convertToPersian(cartItems[id])} onChange={(e) => {
                             updateCartItemAmount(Number(e.target.value), id)
                         }} />
-                        <button onClick={() => addToCart(id)} className='px-4 py-1 font-bold text-xl rounded-md bg-[#e6e6e6]'> + </button>
+                        <button onClick={() => addToCart(id)} className='px-4 py-1 font-bold text-lg xl:text-xl rounded-md bg-[#e6e6e6]'> + </button>
                     </div>
                 </div>
             </div>
